@@ -1,6 +1,7 @@
 import {connect} from 'react-redux';
-import MainPage from "./MainPage";
+import ExpandedResult from "./ExpandedResult";
 import {changePage} from "../../actions/ui_actions";
+import {MAIN_PAGE} from "../../constants/pages";
 
 const mapStateToProps = (state) => {
   return ({})
@@ -8,8 +9,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return ({
-    changePage: (page) => {
-      dispatch(changePage(page))
+    onBack: () => {
+      dispatch(changePage(MAIN_PAGE))
     }
   })
 }
@@ -17,4 +18,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(MainPage)
+)(ExpandedResult)
