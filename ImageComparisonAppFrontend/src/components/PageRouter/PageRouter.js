@@ -3,12 +3,13 @@ import {Text, View} from 'react-native';
 import {CAMERA_VIEW, MAIN_PAGE} from "../../constants/pages";
 import CameraPageContainer from "../Camera/CameraPageContainer";
 import MainPageContainer from "../MainPage/MainPageContainer";
+import {FULL_WIDTH} from "../../styles/general_styles";
 
 class PageRouter extends React.Component {
   render() {
 
     return (
-      <View >
+      <View style={FULL_WIDTH}>
         {this.renderCurrentView()}
       </View>
     );
