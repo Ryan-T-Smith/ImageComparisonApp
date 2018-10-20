@@ -1,7 +1,8 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import {CAMERA_VIEW} from "../../constants/views";
+import {CAMERA_VIEW, MAIN_PAGE} from "../../constants/pages";
 import CameraPageContainer from "../Camera/CameraPageContainer";
+import MainPageContainer from "../MainPage/MainPageContainer";
 
 class PageRouter extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class PageRouter extends React.Component {
 
   renderCurrentView(){
     switch (this.props.currentPage){
+      case MAIN_PAGE: return <MainPageContainer/>
       case CAMERA_VIEW: return <CameraPageContainer/>;
       default: return <Text>Unrecognized Page</Text>;
     }

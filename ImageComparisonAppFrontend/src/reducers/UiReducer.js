@@ -1,12 +1,12 @@
 import merge from 'lodash/merge';
-import {CAMERA_VIEW} from "../constants/views";
+import {MAIN_PAGE} from "../constants/pages";
 
 const DEFAULT_STATE = {
-  currentPage: CAMERA_VIEW
+  currentPage: MAIN_PAGE
 };
 
 const UiReducer = (state = DEFAULT_STATE, action) => {
-  Object.freeze(state)
+  Object.freeze(state);
   let newState = merge({}, state);
 
   switch (action.type) {
@@ -14,6 +14,6 @@ const UiReducer = (state = DEFAULT_STATE, action) => {
     default:
       return state;
   }
-}
+};
 
 export default UiReducer;

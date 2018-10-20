@@ -8,7 +8,7 @@ export const configureStore = (preloadedState) => {
   const middlewares = [
     logger,
     thunkMiddleware
-  ]
+  ];
 
   const middlewareEnhancer = applyMiddleware(...middlewares);
 
