@@ -1,11 +1,11 @@
 import React from 'react';
 import {Button, Text, View} from 'react-native';
 
-class CameraPage extends React.Component {
+class ExpandedResult extends React.Component {
   render() {
     return (
       <View>
-        <Text> CAMERA PAGE </Text>
+        <Text> EXPANDED RESULT PAGE </Text>
         <Button
           title="Back"
           onPress={this.props.onBack}
@@ -18,4 +18,4 @@ class CameraPage extends React.Component {
 
 
 
-export default CameraPage;
+export default ExpandedResult;

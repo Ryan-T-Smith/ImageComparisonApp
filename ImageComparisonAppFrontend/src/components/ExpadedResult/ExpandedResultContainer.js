@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import CameraPage from "./CameraPage";
+import ExpandedResult from "./ExpandedResult";
 import {changePage} from "../../actions/ui_actions";
 import {MAIN_PAGE} from "../../constants/pages";
 
@@ -18,4 +18,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CameraPage)
+)(ExpandedResult)

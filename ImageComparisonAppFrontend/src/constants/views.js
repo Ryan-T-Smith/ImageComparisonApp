@@ -1,1 +1,0 @@
-export const CAMERA_VIEW = "CAMERA_VIEW";
